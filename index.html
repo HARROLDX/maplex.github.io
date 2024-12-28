@@ -24,7 +24,7 @@
                 </p>
                 <p>I am a student at <a href="https://english.buct.edu.cn/main.htm">Beijing University of Chemical Technology (BUCT)</a>,enrolled in 2022. My major is Mechanical Design, Manufacturing, and Automation, and I am currently in my third year of university. 
                 <p>
-                  From June to October 2024, I worked as a part-time remote research assistant at <a href="https://mason.gmu.edu/~xwang64/team.html">George Mason University MICO Lab</a>, under the supervision of Dr. <a href="https://scholar.google.com/citations?user=WhA65J4AAAAJ">Yizhi Zhou</a>. 
+                <!--From June to October 2024, I worked as a part-time remote research assistant at <a href="https://mason.gmu.edu/~xwang64/team.html">George Mason University MICO Lab</a>, under the supervision of Dr. <a href="https://scholar.google.com/citations?user=WhA65J4AAAAJ">Yizhi Zhou</a>. -->
 		<p>Now, I am working as a research intern in <a href="https://www.au.tsinghua.edu.cn/en/">the Department of Automation, Tsinghua University</a>, focusing on SLAM and robot state estimation, under the supervision of Dr. <a href="https://scholar.google.com.hk/citations?user=alz2MpAAAAAJ&hl">Yongliang Shi</a> and Prof.<a href="https://www.innovatorsunder35.com/the-list/guyue-zhou/"> Guyue Zhou</a>.
                 <p>During my time at BUCT, I am maintaining a GPA of 89.2 and leading the <a href="https://sie-robotics.com/">SIE Robotics Club</a>, a student organization focused on general-purpose service robots, and mentored lower-year students interested in robotics.
                 <p>I am currently interested in robotics research, including RL, Embodied AI, SLAM and so on, and I am actively learning about these topics.
@@ -62,51 +62,56 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <h2>Publications</h2>
-    <tr onmouseout="cat4d_stop()" onmouseover="cat4d_start()" bgcolor="#ffffff">  <!--背景色-->>
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='cat4d_image'><video  width=100% height=110% muted autoplay loop>
-          <source src="images/2024icra.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/2024icra.jpg' width="170" style="margin-top:30px;margin-left:-10px;">
-        </div>
-        <script type="text/javascript">
-          function cat4d_start() {
-            document.getElementById('cat4d_image').style.opacity = "1";
-          }
+		  
+<!--
+<tr onmouseout="cat4d_stop()" onmouseover="cat4d_start()" bgcolor="#ffffff">  <!--背景色-->>
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='cat4d_image'><video  width=100% height=110% muted autoplay loop>
+      <source src="images/2024icra.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video></div>
+      <img src='images/2024icra.jpg' width="170" style="margin-top:30px;margin-left:-10px;">
+    </div>
+    <script type="text/javascript">
+      function cat4d_start() {
+        document.getElementById('cat4d_image').style.opacity = "1";
+      }
 
-          function cat4d_stop() {
-            document.getElementById('cat4d_image').style.opacity = "0";
-          }
-          cat4d_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="1">
-			<span class="papertitle">(Submitted) Robust Online Calibration for UWB-Aided Visual-Inertial Navigation with Bias Correction  
-</span>
-        </a>
-        <br>
-				<a href="https://scholar.google.com/citations?user=WhA65J4AAAAJ">Yizhi Zhou*</a>,
-				<a href="1">Jie Xu</a>,
-				<a href="https://poolio.github.io/">Jiawei Xia</a>,
-				<a href="1">Zechen Hu</a>,
-				<a href="https://www.gmu.edu/profiles/xwang64">Xuan Wang</a>
-				<!--<strong>Jonathan T. Barron</strong>-->
-        <br>
-<strong><em>ICRA</em>, 2024</strong>
-<span style="color: red; font-weight: bold;">*</span>
-       <br>
+      function cat4d_stop() {
+        document.getElementById('cat4d_image').style.opacity = "0";
+      }
+      cat4d_stop()
+    </script>
+  </td>
+  <td style="padding:8px;width:80%;vertical-align:middle">
+    <a href="1">
+      <span class="papertitle">(Submitted) Robust Online Calibration for UWB-Aided Visual-Inertial Navigation with Bias Correction  
+      </span>
+    </a>
+    <br>
+    <a href="https://scholar.google.com/citations?user=WhA65J4AAAAJ">Yizhi Zhou*</a>,
+    <a href="1">Jie Xu</a>,
+    <a href="https://poolio.github.io/">Jiawei Xia</a>,
+    <a href="1">Zechen Hu</a>,
+    <a href="https://www.gmu.edu/profiles/xwang64">Xuan Wang</a>
+    <!--<strong>Jonathan T. Barron</strong>-->
+    <br>
+    <strong><em>ICRA</em>, 2024</strong>
+    <span style="color: red; font-weight: bold;">*</span>
+    <br>
 
-        <a href="https://github.com/easy98/stereo_msckf">project page</a>
-        /
-        <a href="1">arXiv</a>
-        <p></p>
-        <p>
-          This paper proposes a robust online calibration method for UWB anchors in Visual-Inertial Navigation Systems (VINS). It overcomes issues with existing methods, such as reliance on accurate robot localization and sensitivity to initial anchor positions. Our approach uses stochastic optimization for reliable initialization and a Schmidt Kalman Filter (SKF) for online refinement. Simulations and real-world tests show improved accuracy and robustness.
-      </td>
-    </tr>
+    <a href="https://github.com/easy98/stereo_msckf">project page</a>
+    /
+    <a href="1">arXiv</a>
+    <p></p>
+    <p>
+      This paper proposes a robust online calibration method for UWB anchors in Visual-Inertial Navigation Systems (VINS). It overcomes issues with existing methods, such as reliance on accurate robot localization and sensitivity to initial anchor positions. Our approach uses stochastic optimization for reliable initialization and a Schmidt Kalman Filter (SKF) for online refinement. Simulations and real-world tests show improved accuracy and robustness.
+  </td>
+</tr>
+-->
+
+		  
   </tbody></table><!--开启一个新的篇章-->
   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
 
@@ -119,11 +124,14 @@
   Recorded a dataset consisting of various challenging environments; Utilized EVO to conduct a performance comparison of algorithms including Coinlio, FastLIO2, FastLIVO, and OpenVINS under sensor degradation conditions.
 </p>
 <td style="padding:16px;width:20%;vertical-align:middle"></td>
+<!--
 <p>
-<strong>MICO Lab, George Mason University &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Part-time remote reaserch assistant</strong>
+<strong>MICO Lab, George Mason University &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Part-time remote research assistant</strong>
 <span style="float: right; margin-left: 20px;">2024.6-10</span><br>
 Based on the reliable initialization method using stochastic optimization proposed by us, we integrate this method and UWB data fusion into the S-MSCKF, and perform simulations and real-world experiments using EKF and SKF. The results show significant improvements in accuracy and robustness. The paper has been submitted to <strong style="color: black;">ICRA 2024</strong><span style="color: red;">*</span>.
 </p>
+-->
+
 
     
   
