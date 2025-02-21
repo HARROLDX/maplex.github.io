@@ -68,42 +68,54 @@
 
 
 		  
-<h2>Publications</h2>
+<h2>Publications</h2>	  
+		  
 
-<tr bgcolor="#ffffff">
+<tr onmouseout="cat4d_stop()" onmouseover="cat4d_start()" bgcolor="#ffffff">
   <td style="padding:16px;width:20%;vertical-align:middle">
     <div class="one">
-      <div class="two" id='cat4d_image'>
-        <video width="100%" height="auto" muted autoplay loop>
-          <source src="images/2024icra.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      <div class="two" id='cat4d_image'><video  width=100% height=110% muted autoplay loop>
+      <source src="images/2024icra.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video></div>
       <img src='images/2024icra.jpg' width="170" style="margin-top:30px;margin-left:-10px;">
     </div>
+    <script type="text/javascript">
+      function cat4d_start() {
+        document.getElementById('cat4d_image').style.opacity = "1";
+      }
+
+      function cat4d_stop() {
+        document.getElementById('cat4d_image').style.opacity = "0";
+      }
+      cat4d_stop()
+    </script>
   </td>
   <td style="padding:8px;width:80%;vertical-align:middle">
     <a href="https://www.youtube.com/watch?v=clcVbl8FGYA">
-      <span class="papertitle">(Submitted) Robust Online Calibration for UWB-Aided Visual-Inertial Navigation with Bias Correction</span>
-    </a>
+      <span class="papertitle">(Submitted) Robust Online Calibration for UWB-Aided Visual-Inertial Navigation with Bias Correction  
+      </span>
+    </a> 
     <br>
     <a href="https://scholar.google.com/citations?user=WhA65J4AAAAJ">Yizhi Zhou*</a>,
     <a href="1">Jie Xu</a>,
     <a href="https://poolio.github.io/">Jiawei Xia</a>,
     <a href="1">Zechen Hu</a>,
     <a href="https://www.gmu.edu/profiles/xwang64">Xuan Wang</a>
+		  
     <br>
     <strong><em>IROS</em>, 2025</strong>
     <span style="color: red; font-weight: bold;">*</span>
     <br>
 
     <a href="https://github.com/easy98/stereo_msckf">project code</a>
+    /
+    <!--<a href="1">arXiv</a> -->
     <p></p>
     <p>
       This paper proposes a robust online calibration method for UWB anchors in Visual-Inertial Navigation Systems (VINS). It overcomes issues with existing methods, such as reliance on accurate robot localization and sensitivity to initial anchor positions. Based on MSCKF, our approach uses stochastic optimization for reliable initialization and a Schmidt Kalman Filter for online refinement. Simulations and real-world tests show improved accuracy and robustness.
-    </p>
   </td>
-</tr>
+</tr> 
 
 
 
@@ -111,20 +123,17 @@
 
 
 
+<h2>Internship</h2>
 
-		  
-<tbody>
-  <!-- 开启一个新的篇章 -- 实习 -->
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <h2>Internship</h2>
-
-    <!-- 第一段实习经历 -->
+<!-- 第一段实习经历 -->
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <tbody>
     <tr>
-      <td style="padding:16px;width:20%;vertical-align:middle">
+      <td width="350" style="padding:16px; vertical-align:middle;">
         <!-- 添加图片 -->
         <img src="images/AIR.png" width="100" height="100" style="border-radius: 50%;"/>
       </td>
-      <td style="padding:16px;width:80%;vertical-align:middle">
+      <td style="padding:16px;width:80%;vertical-align:middle;">
         <p>
           <strong>Institute for AI Industry Research, Tsinghua University &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intern</strong>
           <span style="float: right; margin-left: 20px;">2024.11-Now</span><br>
@@ -135,14 +144,18 @@
         </p>
       </td>
     </tr>
+  </tbody>
+</table>
 
-    <!-- 第二段实习经历 -->
+<!-- 第二段实习经历 -->
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <tbody>
     <tr>
-      <td style="padding:16px;width:20%;vertical-align:middle">
+      <td width="350" style="padding:16px; vertical-align:middle;">
         <!-- 添加图片 -->
         <img src="path/to/your/image2.jpg" width="100" height="100" style="border-radius: 50%;"/>
       </td>
-      <td style="padding:16px;width:80%;vertical-align:middle">
+      <td style="padding:16px;width:80%;vertical-align:middle;">
         <p>
           <strong>Multi-agent Intelligence, Control, and Optimization Lab, George Mason University &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Remote research assistant</strong>
           <span style="float: right; margin-left: 20px;">2024.6-10</span><br>
@@ -151,9 +164,9 @@
         </p>
       </td>
     </tr>
+  </tbody>
+</table>
 
-  </table>
-</tbody>
 
     
   
