@@ -47,6 +47,81 @@
 
 
 
+        <!-- News -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2 class="news-heading">🔥 News</h2>
+                <ul id="newsList">
+                  <li>
+                    <p><span class="news-date">[2025.01]</span> 🎉 One paper gets accepted to ICRA 2025.</p>
+                  </li>
+                  <li>
+                    <p><span class="news-date">[2024.09]</span> 🎓 I started <a href="https://www.mccormick.northwestern.edu/robotics/">Master in Robotics (MSR)</a> program at Northwestern University.</p>
+                  </li>
+                  <li>
+                    <p><span class="news-date">[2023.09]</span> 💼 I started my gap year as a research assistant at <a href="https://zsdonghao.github.io/">PKU-Agibot (智元机器人) Lab</a>, Peking University.</p>
+                  </li>
+                  <li>
+                    <p><span class="news-date">[2023.07]</span> 🎉 Two papers get accepted to CICAI 2023, with a <b>Best Demo Award.</b></p>
+                  </li>
+                  <li>
+                    <p><span class="news-date">[2023.07]</span> 🎉 One paper gets accepted to ICCV 2023.</p>
+                  </li>
+                  <li>
+                    <p><span class="news-date">[2023.06]</span> 🎓 Get my B.Eng. in Mechanical Engineering at Beijing Univeristy of Chemical Technology.</p>
+                  </li>
+                  <li>
+                    <p><span class="news-date">[2022.10]</span> 🦾 Improved <a href="https://www.kickstarter.com/projects/mdrobotkits/mini-pupper-2-open-source-ros2-robot-kit-for-dreamers">Mini Pupper 2</a> and launched it on Kickstarter.</p>
+                  </li>
+                  <li>
+                    <p><span class="news-date">[2022.06]</span> 🎉 Published an <a href="https://aws.amazon.com/blogs/robotics/build-and-simulate-a-mini-pupper-robot-in-the-cloud-without-managing-any-infrastructure/">AWS Robotics Blog</a> in deploying applcation changes from cluod-based simulation to real robot hardware.</p>
+                  </li>
+                  <li>
+                    <p><span class="news-date">[2022.05]</span> 🏆 We get a <a href="https://github.com/mvyp/.github/blob/main/profile/imgs/2.jpg">Third Prize</a> in ICRA 2022 RoboMaster University Sim2Real Challenge.</p>
+                  </li>
+                  <li>
+                    <p><span class="news-date">[2021.10]</span> 💼 I started my roboitcs journey as an intern at <a href="https://air.tsinghua.edu.cn/en/index.htm">Institute for Al Industry Research (AIR)</a>, Tsinghua University.</p>
+                  </li>
+                  <li>
+                    <p><span class="news-date">[2021.09]</span> 🦾 Our open-source quadruped robot <a href="https://www.kickstarter.com/projects/mdrobotkits/mini-pupper-open-sourceros-robot-dog-kit/description">Mini Pupper</a> is launched on Kickstarter, and crowd-funded about $500, 000.</p>
+                  </li>
+                  <li>
+                    <p><span class="news-date">[2021.05]</span> 🏆 We get a <a href="https://github.com/mvyp/.github/blob/main/profile/imgs/4.jpg">Second Prize</a> in RoboCup@Home 2021, China.</p>
+                  </li>
+                </ul>
+                <a href="#" id="expandNews" class="expand-link">Show more</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <script>
+          const newsList = document.getElementById('newsList');
+          const expandLink = document.getElementById('expandNews');
+          const newsItems = newsList.getElementsByTagName('li');
+          const initialDisplay = 5;
+          let isExpanded = false;
+          function toggleNews() {
+            for (let i = initialDisplay; i < newsItems.length; i++) {
+              newsItems[i].classList.toggle('hidden');
+            }
+            isExpanded = !isExpanded;
+            expandLink.textContent = isExpanded ? 'Show less' : 'Show more';
+          }
+          if (newsItems.length > initialDisplay) {
+            for (let i = initialDisplay; i < newsItems.length; i++) {
+              newsItems[i].classList.add('hidden');
+            }
+            expandLink.style.display = 'inline-block';
+          } else {
+            expandLink.style.display = 'none';
+          }
+          expandLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            toggleNews();
+          });
+        </script>
 
 
 		  
@@ -78,25 +153,6 @@
 
 	  
 
-<!--荣誉-->
-          </tbody></table>
-		<div style="margin-bottom:-35px;"></div> <!-- 减小间距 -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:1px;width:100%;vertical-align:middle">
-                <h2>Honours & Awards</h2>
-                <p>
-                  2024 Xiaomi Technology  Scholarship
-                <p>
-                  2024 Second Prize in Robocup@Home (leader) 
-                <p>
-                  2023 Beijing University of Chemical Technology Excellent Student Leader
-		<p>
-                  2021 First Prize in DJI RoboMaster Youth East China League Competition
-		<p> &nbsp; 
-                </p>
-              </td>
-            </tr>
 
 
 
@@ -433,17 +489,40 @@ system by integrating DBoW3 for visual loop detection, GTSAM for graph-based opt
                 ICRA 2024 RoboMaster University Sim2real Challenge：Utilize ArUco library for detecting boxes' poses. Extract the transformation and rotation matrices of box from solvePnP and use our own message. Develop an Extended Kalman Filter alongside an omnidirectional motion model for state estimation using sensor data, including IMU, odometry and depthimage to laserscan. Utilize A* and TEB algorithm.
 
 
+<!--荣誉-->
+          </tbody></table>
+		<div style="margin-bottom:-35px;"></div> <!-- 减小间距 -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:1px;width:100%;vertical-align:middle">
+                <h2>Honours & Awards</h2>
+                <p>
+                  2024 Xiaomi Technology  Scholarship
+                <p>
+                  2024 Second Prize in Robocup@Home Competition (leader) 
+		<p>
+                  2024 Second Prize in China iCAN Innovation Contest (leader)
+                <p>
+                  2023 Beijing University of Chemical Technology Excellent Student Leader
+		<p>
+                  2021 First Prize in DJI RoboMaster Youth East China League Competition
+		<p> &nbsp; 
+                </p>
+              </td>
+            </tr>
 
 
-		      
+<!--活动-->		      
 </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:1px;width:100%;vertical-align:middle;margin-top:20px;">
 
-                <h2 style="margin-top:40px;">Activities</h2>
+                <h2 style="margin-top:40px;">Leaderships & Activities</h2>
                 <p>
                   Teaching Assistant of Robotic Workshop at BUCT
+		<p>
+                  Leader of the <a href="https://sie-robotics.com/">SIE Robotics Club</a>
 		 <p>
                   Signed Photographer for 500px and Visual China: Traveled to over 60 cities worldwide
                 <p>
@@ -452,7 +531,7 @@ system by integrating DBoW3 for visual loop detection, GTSAM for graph-based opt
                   Leader of the Comprehensive Office, BUCT Student Union
                 <p>
               </td>
-            </tr>
+            </tr>  
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
