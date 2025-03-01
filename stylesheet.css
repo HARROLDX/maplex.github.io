@@ -140,6 +140,9 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+.hidden {
+  display: none;
+}
 .news {
   width: 100%;
   max-width: 800px;
