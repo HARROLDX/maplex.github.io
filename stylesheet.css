@@ -140,3 +140,37 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+/* news */
+.news-heading {
+  margin-bottom: 20px; /* Maintain normal spacing after the heading */
+}
+
+#newsList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#newsList li {
+  margin-bottom: 0px; /* Reduced spacing between news items */
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out, margin 0.3s ease-out;
+  max-height: 50px;
+  opacity: 1;
+  overflow: hidden;
+}
+
+#newsList li:last-child {
+  margin-bottom: 0;
+}
+
+#newsList li p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+#newsList li.hidden {
+  max-height: 0;
+  opacity: 0;
+  margin: 0;
+}
