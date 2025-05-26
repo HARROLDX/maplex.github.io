@@ -71,14 +71,14 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2 class="news-heading">🔥 News</h2>
                 <ul id="newsList">
-		<li>
+		  <li>
+                    <p><span class="news-date">[2025.05]</span> 🤖 I started as a research intern at <a href="https://air.tsinghua.edu.cn/en/"> Institute for AI Industry Research, Tsinghua University</a>, China, Beijing</p>
+                  </li>
+		  <li>
                     <p><span class="news-date">[2025.04]</span> 🏆 We got Third Prize in <a href="https://www.dji.com/cn">DJI Technology</a> RoboMaster University League Competition 2025, China, Shandong Province.</p>
                   </li>
                   <li>
                     <p><span class="news-date">[2025.03]</span> 🎉 Our papers were submitted to IROS 2025.</p>
-                  </li>
-                  <li>
-                    <p><span class="news-date">[2024.11]</span> 🤖 I started as a research intern in <a href="https://www.au.tsinghua.edu.cn/en/">Department of Automation, Tsinghua University</a>, China, Beijing</p>
                   </li>
 		  <li>
                     <p><span class="news-date">[2024.11]</span> 🎉 I were honored to receive the<a href="https://gongyi.mi.com/foundation#/article/63/1/1">Xiaomi Scholarship</a>.</p>
@@ -291,10 +291,11 @@
               </tr>
             </tbody>
           </table>
+		  
 		<!--上述是大标题-->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
-
+		<!--第一篇论文-->
               <tr onmouseout="cicai()" onmouseover="bog_start()">
                 <td style="padding:20px;width:30%;vertical-align:middle">
                   <div class="one">
@@ -340,67 +341,42 @@
                   </p>
                 </td>
               </tr>
-			  
-		      
 
-<!--               <tr onmouseout="int2()" onmouseover="bog_start()">
-                <td style="padding:20px;width:30%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='int2' style="opacity: 0;">
-                    </div>
-                    <img src='images/int2.jpg' width=200%>
-                  </div>
-                  <script type="text/javascript">
-                    function bog_start() {
-                      document.getElementById('int2').style.opacity = "1";
-                    }
-
-                    function bog_stop() {
-                      document.getElementById('int2').style.opacity = "0";
-                    }
-                    bog_stop()
-                  </script>
-                </td>
-                <td style="padding:35px;width:75%;vertical-align:middle">
-                  <span class="papertitle">INT2: Interactive Trajectory Prediction at Intersections</span>
-                  <br>
-                  <a href="https://scholar.google.com/citations?user=4PXGeaYAAAAJ">Zhijie Yan</a>, 
-                  <a href="https://philipflyg.github.io/">Pengfei Li</a>, 
-                  </br>
-                  <strong>
-                    <em>ICCV, 2023</em>
-                  </strong>
-                  <br>
-                  <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Yan_INT2_Interactive_Trajectory_Prediction_at_Intersections_ICCV_2023_paper.pdf">
-                    <b>
-                      [Paper]
-                    </b>
-                  </a>
-                  <a href="https://github.com/AIR-DISCOVER/INT2">
-                    <b>
-                      [Code]
-                    </b>
-                  </a>
-                  <a href="https://www.youtube.com/watch?v=KNkuakDvgVc">
-                    <b>
-                      [Video]
-                    </b>
-                  </a>
-                  <p>
-                    We present a large-scale interactive trajectory prediction dataset named INT2 for INTeractive 
-                    trajectory prediction at INTersections. INT2 includes 612,000 scenes, each lasting 1 minute, 
-                    containing up to 10,200 hours of data. We benchmark the best open-sourced interactive trajectory 
-                    prediction method on INT2 and Waymo Open Dataset, under in-domain and cross-domain settings.
-                  </p>
-                </td>
-              </tr> -->
-		      
+    <!-- 第二篇论文 -->
+    <tr onmouseout="bog_stop()" onmouseover="bog_start()">
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='m2sim' style="opacity: 0;"></div>
+          <img src='images/irosskf.gif' width=180%>
+        </div>
+      </td>
+      <td style="padding:35px;width:75%;vertical-align:middle">
+        <span class="papertitle">(Submitted)  CVIRO: A Consistent and Tightly-Coupled Visual-Inertial-Ranging Odometry on Lie Groups</span>
+        <br>
+        <a href="https://scholar.google.com/citations?user=WhA65J4AAAAJ">Yizhi Zhou*</a>,
+        <a href="1">Jie Xu</a>,
+        <a href="https://poolio.github.io/">Jiawei Xia</a>,
+        <a href="1">Ziwei Kang</a>,
+        <a href="https://www.gmu.edu/profiles/xwang64">Xuan Wang†</a>
+        <br>
+        <strong><em>IROS, 2025</em></strong>
+        <br>
+        <a href=""><b>[Paper]</b></a>
+        <a href="https://www.youtube.com/watch?v=clcVbl8FGYA"><b>[Video]</b></a>
+        <p>
+          This paper proposes a consistent
+ and tightly-coupled visual-inertial-ranging odometry (CVIRO)
+ system based on the Lie group. Our method incorporates the
+ UWB anchor state into the system state, explicitly accounting
+ for UWB calibration uncertainty and enabling the joint and
+ consistent estimation of both robot and anchor states. Further
+more, observability consistency is ensured by leveraging the
+ invariant error properties of the Lie group.
+    </tr>
 
 
-              </tr>
-
-            </tbody>
-          </table>
+	</tbody>
+</table>
 	  
 
 	  <!--Projects项目-->
@@ -417,6 +393,35 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+             <tr onmouseout="full_stack_arm_and_gripper()" onmouseover="bog_start()"></tr>
+                <td style="padding:20px;width:30%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='full_stack_arm_and_gripper' style="opacity: 0;">
+                    </div>
+                    <img src='images/RL2.gif' width=180%>
+                  </div>
+                  <script type="text/javascript">
+                    function bog_start() {
+                      document.getElementById('full_stack_arm_and_gripper').style.opacity = "1";
+                    }
+
+                    function bog_stop() {
+                      document.getElementById('full_stack_arm_and_gripper').style.opacity = "0";
+                    }
+                    bog_stop()
+                  </script>
+                </td>
+                <td style="padding:35px;width:75%;vertical-align:middle">
+                  <span class="papertitle">Train human robot to walk using the reinforcement learning PPO algorithm based on Genesis and Isaac sim</span>
+                  <br>
+			<a href="https://harroldx.github.io/maplex.github.io/">Jiawei Xia*</a>
+                  <p>
+		Based on Genesis and Isaac sim, design and implement a RL robot control framework based on PPO from rsl_rl package, integrating multiple joint indices precisely into the framework based on the URDF model. Develop several custom reward functions, such as joint position reward, foot contact and gait matching reward, foot air-time reward, and action smoothness reward. Incorporate a fall detection mechanism during the training process to enhance training efficiency.
+                  </p>
+                </td>
+              </tr>
+
+		  
               <tr onmouseout="active_perception()" onmouseover="bog_start()">
                 <td style="padding:20px;width:30%;vertical-align:middle">
                   <div class="one">
@@ -508,33 +513,7 @@ system by integrating DBoW3 for visual loop detection, GTSAM for graph-based opt
                 </td>
               </tr>
 
-              <tr onmouseout="full_stack_arm_and_gripper()" onmouseover="bog_start()"></tr>
-                <td style="padding:20px;width:30%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='full_stack_arm_and_gripper' style="opacity: 0;">
-                    </div>
-                    <img src='images/RL2.gif' width=180%>
-                  </div>
-                  <script type="text/javascript">
-                    function bog_start() {
-                      document.getElementById('full_stack_arm_and_gripper').style.opacity = "1";
-                    }
 
-                    function bog_stop() {
-                      document.getElementById('full_stack_arm_and_gripper').style.opacity = "0";
-                    }
-                    bog_stop()
-                  </script>
-                </td>
-                <td style="padding:35px;width:75%;vertical-align:middle">
-                  <span class="papertitle">Train human robot to walk using the reinforcement learning PPO algorithm based on Genesis and Isaac sim</span>
-                  <br>
-			<a href="https://harroldx.github.io/maplex.github.io/">Jiawei Xia*</a>
-                  <p>
-		Based on Genesis and Isaac sim, design and implement a RL robot control framework based on PPO from rsl_rl package, integrating multiple joint indices precisely into the framework based on the URDF model. Develop several custom reward functions, such as joint position reward, foot contact and gait matching reward, foot air-time reward, and action smoothness reward. Incorporate a fall detection mechanism during the training process to enhance training efficiency.
-                  </p>
-                </td>
-              </tr>
 
               <tr onmouseout="bimanual_demonstration()" onmouseover="bog_start()">
                 <td style="padding:20px;width:30%;vertical-align:middle">
