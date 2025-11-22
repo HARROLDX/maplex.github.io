@@ -323,7 +323,7 @@
         <a href="1"><b>[Paper]</b></a>
         <a href="1"><b>[Video]</b></a>
         <p>
-          Robotic manipulation in kitchens requires reasoning about latent physical state—especially temperature—that RGB or depth alone cannot directly observe. We present a multi‑modal manipulation framework that augments an RGB‑D camera with a compact thermal sensor and fuses the streams into a heat‑aware scene representation for closed‑loop control. We evaluate the approach on three common cooking tasks
+          Kitchen robots often interact with thermal properties, but current RGB-D-based methods ignore this key thermal modality. To fill this gap, we introduce HeatSurf—a novel drop-in fusion module—endowing robots with surface-grounded thermal understanding for manipulation. Our approach adds a thermal sensor to an RGB-D camera, projecting per-point thermal intensity and temporal gradients onto a Gaussian Splatting scene representation. We integrate this into an imitation learning policy and test it on three real-world temperature-critical kitchen tasks: hotter-of-two selection, uniform oil spreading, and hot-spill cleanup.
     </tr>
 
 
