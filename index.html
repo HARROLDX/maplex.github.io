@@ -308,6 +308,32 @@
             <tbody>
 		    
 <!--论文-->
+
+    <tr onmouseout="bog_stop()" onmouseover="bog_start()">
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='m2sim' style="opacity: 0;"></div>
+          <img src='images/fastlivo1.gif' width=180%>
+        </div>
+      </td>
+      <td style="padding:35px;width:75%;vertical-align:middle">
+        <span class="papertitle">(Submitted) PL-LITO: LiDAR-Inertial-Thermal SLAM with Radiometric Mapping and Point-Line Features for Autonomous Safety Inspection</span>
+        <br>
+ 
+        <a href="https://harroldx.github.io/maplex.github.io/">Jiawei Xia</a>,
+        <a href="https://scholar.google.com.hk/citations?user=alz2MpAAAAAJ&hl">Yongliang Shi†</a>
+        <br>
+        <strong><em>IEEE-RAL</em></strong>
+        <br>
+        <a href="1"><b>[Paper]</b></a>
+        <a href="1"><b>[Video]</b></a>
+        <p>
+          We propose PL-LITO, a robust LiDAR-Thermal-Inertial SLAM system for industrial safety. To tackle thermal image instability (AGC) and low contrast, it integrates online photometric calibration. The method uses a deep learning point-line feature network and tightly-coupled Cascaded Iterated Error Kalman Filter, fusing multi-modal data. And it constructs a Probabilistic Intensity Voxel Map for consistent thermal monitoring and real-time anomaly detection. Model inference is accelerated via TensorRT. 
+    </tr>
+
+
+
+
     <tr onmouseout="bog_stop()" onmouseover="bog_start()">
       <td style="padding:20px;width:30%;vertical-align:middle">
         <div class="one">
@@ -407,41 +433,7 @@ more, observability consistency is ensured by leveraging the
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
-
-
-
-
-              <tr onmouseout="tactile_sensor()" onmouseover="bog_start()">
-                <td style="padding:20px;width:30%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='tactile_sensor' style="opacity: 0;">
-                    </div>
-                    <img src='images/fastlivo1.gif' width=180%>
-                  </div>
-                  <script type="text/javascript">
-                    function bog_start() {
-                      document.getElementById('tactile_sensor').style.opacity = "1";
-                    }
-
-                    function bog_stop() {
-                      document.getElementById('tactile_sensor').style.opacity = "0";
-                    }
-                    bog_stop()
-                  </script>
-                </td>
-                <td style="padding:35px;width:75%;vertical-align:middle">
-                  <span class="papertitle">PL-LITO: LiDAR-Inertial-Thermal SLAM with Radiometric Mapping and Point-Line Features for Autonomous Safety Inspection</span>
-                  <br>
-	  <a href="https://harroldx.github.io/maplex.github.io/">Jiawei Xia</a>,
-	  <a href="https://scholar.google.com.hk/citations?user=alz2MpAAAAAJ&hl">Yongliang Shi†</a>
-                  <p>
-We propose PL-LITO, a robust LiDAR-Thermal-Inertial SLAM system for industrial safety. To tackle thermal image instability (AGC) and low contrast, it integrates online photometric calibration. The method uses a deep learning point-line feature network and tightly-coupled Cascaded Iterated Error Kalman Filter, fusing multi-modal data. And it constructs a Probabilistic Intensity Voxel Map for consistent thermal monitoring and real-time anomaly detection. Model inference is accelerated via TensorRT. 
-                </p>
-		</td>
-              </tr>
 				
-
-
 
 
 				
