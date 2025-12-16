@@ -436,6 +436,39 @@ more, observability consistency is ensured by leveraging the
 				
 
 
+
+
+              <tr onmouseout="active_perception()" onmouseover="bog_start()">
+                <td style="padding:20px;width:30%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='active_perception' style="opacity: 0;">
+                    </div>
+                    <img src='images/lerobot.gif' width=180%>
+                  </div>
+                  <script type="text/javascript">
+                    function bog_start() {
+                      document.getElementById('active_perception').style.opacity = "1";
+                    }
+
+                    function bog_stop() {
+                      document.getElementById('active_perception').style.opacity = "0";
+                    }
+                    bog_stop()
+                  </script>
+                </td>
+                <td style="padding:35px;width:75%;vertical-align:middle">
+                  <span class="papertitle">Reproduce and train the open-source neural network 'Action Chunking with Transformer' based on the LeRobot open-source project</span>
+                  <br>
+				<a href="https://harroldx.github.io/maplex.github.io/">Jiawei Xia*</a>,
+				<a href="https://dongray1009.github.io">Xianglei Dong*</a>
+                  <p>
+			Developed a Mujoco simulation environment and implemented a forward and inverse kinematics library to control Lerobot's angle or end-effector posture changes via keyboard input. Collected camera images and joint state data for training the open-source neural network, Action Chunking with Transformer (ACT), and enabled Lerobot to complete table-cleaning tasks. In the future, I plan to use another robotics arm base on lerobot framework to study visual-language-action models with multimodal fusion.
+                </p>
+		</td>
+              </tr>
+
+
+				
 				
 
               <tr onmouseout="active_perception()" onmouseover="bog_start()">
@@ -467,41 +500,6 @@ more, observability consistency is ensured by leveraging the
               </tr>
 
 
-
-				
-
-
-				
-
-
-              <tr onmouseout="active_perception()" onmouseover="bog_start()">
-                <td style="padding:20px;width:30%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='active_perception' style="opacity: 0;">
-                    </div>
-                    <img src='images/lerobot.gif' width=180%>
-                  </div>
-                  <script type="text/javascript">
-                    function bog_start() {
-                      document.getElementById('active_perception').style.opacity = "1";
-                    }
-
-                    function bog_stop() {
-                      document.getElementById('active_perception').style.opacity = "0";
-                    }
-                    bog_stop()
-                  </script>
-                </td>
-                <td style="padding:35px;width:75%;vertical-align:middle">
-                  <span class="papertitle">Reproduce and train the open-source neural network 'Action Chunking with Transformer' based on the LeRobot open-source project</span>
-                  <br>
-				<a href="https://harroldx.github.io/maplex.github.io/">Jiawei Xia*</a>,
-				<a href="https://dongray1009.github.io">Xianglei Dong*</a>
-                  <p>
-			Developed a Mujoco simulation environment and implemented a forward and inverse kinematics library to control Lerobot's angle or end-effector posture changes via keyboard input. Collected camera images and joint state data for training the open-source neural network, Action Chunking with Transformer (ACT), and enabled Lerobot to complete table-cleaning tasks. In the future, I plan to use another robotics arm base on lerobot framework to study visual-language-action models with multimodal fusion.
-                </p>
-		</td>
-              </tr>
 
 
 
