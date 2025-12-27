@@ -438,35 +438,6 @@ more, observability consistency is ensured by leveraging the
 
 
 
-              <tr onmouseout="active_perception()" onmouseover="bog_start()">
-                <td style="padding:20px;width:30%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='active_perception' style="opacity: 0;">
-                    </div>
-                    <img src='images/lerobot.gif' width=180%>
-                  </div>
-                  <script type="text/javascript">
-                    function bog_start() {
-                      document.getElementById('active_perception').style.opacity = "1";
-                    }
-
-                    function bog_stop() {
-                      document.getElementById('active_perception').style.opacity = "0";
-                    }
-                    bog_stop()
-                  </script>
-                </td>
-                <td style="padding:35px;width:75%;vertical-align:middle">
-                  <span class="papertitle">Reproduce and train the open-source neural network 'Action Chunking with Transformer' based on the LeRobot open-source project</span>
-                  <br>
-				<a href="https://harroldx.github.io/maplex.github.io/">Jiawei Xia*</a>,
-				<a href="https://dongray1009.github.io">Xianglei Dong*</a>
-                  <p>
-			Developed a Mujoco simulation environment and implemented a forward and inverse kinematics library to control Lerobot's angle or end-effector posture changes via keyboard input. Collected camera images and joint state data for training the open-source neural network, Action Chunking with Transformer (ACT), and enabled Lerobot to complete table-cleaning tasks. In the future, I plan to use another robotics arm base on lerobot framework to study visual-language-action models with multimodal fusion.
-                </p>
-		</td>
-              </tr>
-
 
 				
 				
@@ -494,7 +465,7 @@ more, observability consistency is ensured by leveraging the
                   <br>
 				<a href="https://harroldx.github.io/maplex.github.io/">Jiawei Xia</a>
                   <p>
-			I have recently begun to learn how to use robot simulators. Based on the official technical documentation of NVIDIA Isaac Sim 4.5.0 and Isaac Lab 2.0, I trained an imitation learning policy for the Franka robotic arm to stack red, green, and blue blocks. Meanwhile, I have made initial contact with MuJoCo, and based on open-source tutorials and the LeRobot framework, I trained the SmolVLA algorithm to implement the apple-placing task.
+			I have recently begun to learn about Robo Learning. I used a low-cost robotic arm and Amazing-Hand, and built a MuJoCo environment for them. I adapted the LeRobot code to collect camera images and joint state data, which I used to train the open-source neural network model, Action Chunking with Transformer (ACT). Additionally, I trained an imitation learning policy for the Franka robotic arm in the Isaac Lab 2.0 simulator.
                 </p>
 		</td>
               </tr>
@@ -532,7 +503,7 @@ more, observability consistency is ensured by leveraging the
 			        <a href="1">Boyi Zhang</a>,
 			        <a href="1">Yutong Sun</a>
                   <p>
-                  Developed an intelligent home service robot using Kinova Gen2 and Kinect Azure camera based on ROS Noetic, with functions including guest reception and guidance, voice interaction, object recognition, and room cleaning. Used Graspnet algorithm to get the pose of the object, which was sent to the end of the robotic arm by TF listener. Controlled the arm using Actionlib and MoveIt!, and used the RRT* algorithm for efficient trajectory generation. Adopted Azure AI Speech SDK for speech recognition and voice output, and combined it with a finite state machine to enable simple human-computer voice interaction. For object recognition, I integrated YOLOv5 and Kinect DK. Applied Cartographer for 2D indoor mapping, used IRIS LaMa for robot localization, and achieved local path planning based on the DWA and global path planning based on the A* algorithm.
+                  Developed an intelligent home service robot using Kinova Gen2 and Kinect Azure camera based on ROS Noetic, with functions including guest reception and guidance, voice interaction, object recognition, and room cleaning. Used Gemini, SAM2, and Graspnet algorithm to get the pose of the special object, which was sent to the end of the robotic arm by TF listener. Controlled the arm using Actionlib and MoveIt!. Applied FAST-LIO2 using Livox-MId360 for indoor mapping and robot localization. Combined robot with a finite state machine to enable simple human-computer voice interaction.
                   </p>
                 </td>
               </tr>
@@ -568,7 +539,7 @@ more, observability consistency is ensured by leveraging the
               <a href="1">Hanhong Fu*</a>,
               <a href="https://harroldx.github.io/maplex.github.io/">Jiawei Xia*</a>
                   <p>
-Used the open-source vision algorithm framework of the South China Normal University - PIONEER team to our own robot, used PnP to calculate the 3D position of the armor plate, and used Kalman filtering for tracking; The robot used four M3508 motors for the chassis and two M6020 motors for the turret, controlled via CAN communication and PID algorithms for current, speed, and position loops. A six-axis gyroscope provided data via SPI, fused with the Mahony algorithm to compute quaternion-based turret orientation. Used feedforward PID to improve the gimbal drive and achieve gravity compensation.
+Used the vision algorithm framework of the South China Normal University - PIONEER team to our own robot, used PnP to calculate the 3D position of the armor plate, and used Kalman filtering for tracking; The robot used four M3508 motors for the chassis and two M6020 motors for the turret, controlled via CAN communication and PID algorithms for current, speed, and position loops. Used feedforward PID to improve the gimbal drive and achieve gravity compensation.
                   </p>
                 </td>
               </tr>
@@ -600,7 +571,7 @@ Used the open-source vision algorithm framework of the South China Normal Univer
               <a href="1">Wencong Zhang</a>,
               <a href="1">Boyi Zhang</a>
                   <p>
-                    ICRA 2024 RoboMaster University Sim2real Challenge：In Habitat sim environment in docker provided by organizers, utilized ArUco for detecting poses of boxes, extracted the transformation and rotation matrices of box from solvePnP and used our own message. Deployed an Extended Kalman Filter alongside an omnidirectional motion model for state estimation using sensor data, including IMU, odometry and depthimage to laserscan. Optimized parameters of TEB local planner.
+                    ICRA 2024 RoboMaster University Sim2real Challenge: In Habitat sim environment in docker provided by organizers, utilized ArUco for detecting poses of boxes, extracted the transformation and rotation matrices of box from solvePnP and used our own message. Deployed an Extended Kalman Filter alongside an omnidirectional motion model for state estimation using sensor data, including IMU, odometry and depthimage to laserscan.
                   </p>
                 </td>
               </tr>
@@ -661,7 +632,7 @@ Used the open-source vision algorithm framework of the South China Normal Univer
                   <br>
 			<a href="https://harroldx.github.io/maplex.github.io/">Jiawei Xia</a>
                   <p>
-1:Designed the oil circuit. Selected DSG-01 and DSG-005 directional control valves, as well as a flow control valve, a pilot operated relief valve, etc. for the parts. 2:Designed a two-stage high-speed helical gear and low-speed spur gear cylindrical reducer using AutoCAD, with a design life (service life) of 10 years. The transmission device consisted of a motor, V-belt, reducer, and working machine.
+First, designed the oil circuit. Selected DSG-01 and DSG-005 directional control valves, as well as a flow control valve, a pilot operated relief valve, etc. for the parts. Second, designed a two-stage high-speed helical gear and low-speed spur gear cylindrical reducer using AutoCAD, with a design life (service life) of 10 years. The transmission device consisted of a motor, V-belt, reducer, and working machine.
                   </p>
                 </td>
               </tr>
