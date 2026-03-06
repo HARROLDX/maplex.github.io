@@ -232,6 +232,10 @@ span.highlight {
   text-decoration: underline;
 }
 
+.section-expand-link {
+  margin-left: 20px;
+}
+
 #awardsList,
 #leadershipList {
   list-style-type: none;
