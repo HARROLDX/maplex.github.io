@@ -109,7 +109,7 @@
                   <div class="one">
                     <div class="two" id='cicai' style="opacity: 0;">
                     </div>
-                   <img src='images/BUCT.png' style="width: 150%; margin-left: 30px;margin-top: 35px;">
+                   <img src='images/BUCT.png' style="width: 150%; margin-left: 25px;margin-top: 45px;">
                   </div>
                   <script type="text/javascript">
                     function bog_start() {
@@ -125,7 +125,7 @@
                 <td style="padding:35px;width:75%;vertical-align:middle">
                   <span class="papertitle">Beijing University of Chemical Technology, Beijing, China</span>
                   <br>
-			Bachelor of Engineering, Mechanical Design, Manufacturing and Its Automation (Robotics)
+			Bachelor of Engineering, Mechanical Design and Its Automation (Robotics)
                   <br>
 			2022.9-Now
 		<br>
@@ -370,7 +370,7 @@
                   <br>
 				<a href="https://harroldx.github.io/">Jiawei Xia</a>
                   <p>
-			I have recently begun to learn about Robo Learning. I used a Low-Cost robotic arm and <a href="https://github.com/pollen-robotics/AmazingHand">Amazing-Hand</a>, and built a MuJoCo environment for them. I adapted the LeRobot code to our robotic arms and collect camera images and joint state data, which I used to train the open-source neural network model-Action Chunking with Transformer (ACT). Additionally, I trained an imitation learning policy for the Franka robotic arm in the Isaac Lab 2.0 simulator.
+			 I'm starting to learn Robo Learning and Manipulation. I used a Low-Cost robotic arm and <a href="https://github.com/pollen-robotics/AmazingHand">Amazing-Hand</a> and I adapted the LeRobot code to the robotic arms. I collect camera images and joint state data, which I used to train the open-source neural network model-Action Chunking with Transformer (ACT).
                 </p>
 		</td>
               </tr>
@@ -418,6 +418,38 @@
 
 				
 <!--次要的，非主导的project-->
+
+              <tr onmouseout="mini_pupper_2()" onmouseover="bog_start()">
+                <td style="padding:20px;width:30%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='mini_pupper_2' style="opacity: 0;">
+                    </div>
+                    <img src='images/rmsim.gif' width=180%>
+                  </div>
+                  <script type="text/javascript">
+                    function bog_start() {
+                      document.getElementById('mini_pupper_2').style.opacity = "1";
+                    }
+
+                    function bog_stop() {
+                      document.getElementById('mini_pupper_2').style.opacity = "0";
+                    }
+                    bog_stop()
+                  </script>
+                </td>
+                <td style="padding:35px;width:75%;vertical-align:middle">
+                  <span class="papertitle"><a href="https://www.bilibili.com/video/BV1ugbKeaEhx/?share_source=copy_web&vd_source=1d11b082e214e205bf1127f07df592b2">Simulation of an Intelligent Mineral Handling Robot</a></span>
+                  <br>
+			  <a href="https://dongray1009.github.io">Xianglei Dong*</a>,
+              <a href="https://harroldx.github.io/">Jiawei Xia*</a>,
+              <a href="1">Wencong Zhang</a>,
+              <a href="1">Boyi Zhang</a>
+                  <p>
+                    ICRA 2024 RoboMaster Sim2real Challenge: In Habitat sim environment in docker provided by organizers, utilized ArUco for detecting poses of boxes, extracted the transformation and rotation matrices of box from solvePnP. Deployed an Extended Kalman Filter alongside an omnidirectional motion model for state estimation using sensor data, including IMU, odometry and depthimage to laserscan.
+                  </p>
+                </td>
+              </tr>
+
 		 
 <tr onmouseout="full_stack_arm_and_gripper()" onmouseover="bog_start()">
     <td style="padding:20px;width:30%;vertical-align:middle">
@@ -485,36 +517,7 @@
               </tr>
 
 		
-              <tr onmouseout="mini_pupper_2()" onmouseover="bog_start()">
-                <td style="padding:20px;width:30%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='mini_pupper_2' style="opacity: 0;">
-                    </div>
-                    <img src='images/rmsim.gif' width=180%>
-                  </div>
-                  <script type="text/javascript">
-                    function bog_start() {
-                      document.getElementById('mini_pupper_2').style.opacity = "1";
-                    }
 
-                    function bog_stop() {
-                      document.getElementById('mini_pupper_2').style.opacity = "0";
-                    }
-                    bog_stop()
-                  </script>
-                </td>
-                <td style="padding:35px;width:75%;vertical-align:middle">
-                  <span class="papertitle"><a href="https://www.bilibili.com/video/BV1ugbKeaEhx/?share_source=copy_web&vd_source=1d11b082e214e205bf1127f07df592b2">Simulation of an Intelligent Mineral Handling Robot</a></span>
-                  <br>
-			  <a href="https://dongray1009.github.io">Xianglei Dong*</a>,
-              <a href="https://harroldx.github.io/">Jiawei Xia*</a>,
-              <a href="1">Wencong Zhang</a>,
-              <a href="1">Boyi Zhang</a>
-                  <p>
-                    ICRA 2024 RoboMaster University Sim2real Challenge: In Habitat sim environment in docker provided by organizers, utilized ArUco for detecting poses of boxes, extracted the transformation and rotation matrices of box from solvePnP. Deployed an Extended Kalman Filter alongside an omnidirectional motion model for state estimation using sensor data, including IMU, odometry and depthimage to laserscan.
-                  </p>
-                </td>
-              </tr>
 
 
 
