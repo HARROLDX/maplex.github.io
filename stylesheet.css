@@ -231,3 +231,15 @@ span.highlight {
   color: #004080;
   text-decoration: underline;
 }
+
+#awardsList,
+#leadershipList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#awardsList li,
+#leadershipList li {
+  margin-bottom: 8px;
+}
