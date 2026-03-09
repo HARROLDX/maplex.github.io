@@ -345,39 +345,6 @@
 
           <table id="projectsList" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
-				
-				
-
-              <tr onmouseout="active_perception()" onmouseover="bog_start()">
-                <td style="padding:20px;width:30%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='active_perception' style="opacity: 0;">
-                    </div>
-                    <img src='images/boxarm.gif' width=180%>
-                  </div>
-                  <script type="text/javascript">
-                    function bog_start() {
-                      document.getElementById('active_perception').style.opacity = "1";
-                    }
-
-                    function bog_stop() {
-                      document.getElementById('active_perception').style.opacity = "0";
-                    }
-                    bog_stop()
-                  </script>
-                </td>
-                <td style="padding:35px;width:75%;vertical-align:middle">
-                  <span class="papertitle"> Train Action Chunking Transformer using Low-Cost Robotic Arms and Dexterous Hands </span>
-                  <br>
-				<a href="https://harroldx.github.io/">Jiawei Xia</a>
-                  <p>
-			 I'm starting to learn Robo Learning and Manipulation. I used a Low-Cost robotic arm and <a href="https://github.com/pollen-robotics/AmazingHand">Amazing-Hand</a> and I adapted the LeRobot code to the robotic arms. I collect camera images and joint state data, which I used to train the open-source neural network model-Action Chunking with Transformer (ACT).
-                </p>
-		</td>
-              </tr>
-
-
-
 
 
 
@@ -413,6 +380,46 @@
                   </p>
                 </td>
               </tr>
+            
+
+              
+				
+
+              <tr onmouseout="active_perception()" onmouseover="bog_start()">
+                <td style="padding:20px;width:30%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='active_perception' style="opacity: 0;">
+                    </div>
+                    <img src='images/boxarm.gif' width=180%>
+                  </div>
+                  <script type="text/javascript">
+                    function bog_start() {
+                      document.getElementById('active_perception').style.opacity = "1";
+                    }
+
+                    function bog_stop() {
+                      document.getElementById('active_perception').style.opacity = "0";
+                    }
+                    bog_stop()
+                  </script>
+                </td>
+                <td style="padding:35px;width:75%;vertical-align:middle">
+                  <span class="papertitle"> Train Action Chunking Transformer using Low-Cost Robotic Arms and Dexterous Hands </span>
+                  <br>
+				<a href="https://harroldx.github.io/">Jiawei Xia</a>
+                  <p>
+			 When I first started learning Robo and Manipulation, I used a Low-Cost robotic arm and <a href="https://github.com/pollen-robotics/AmazingHand">Amazing-Hand</a> and I adapted the LeRobot code to the robotic arms. I collect camera images and joint state data, which I used to train the open-source neural network model-Action Chunking with Transformer (ACT) and PI0.
+                </p>
+		</td>
+              </tr>
+
+
+
+
+
+
+
+
 
 
 
